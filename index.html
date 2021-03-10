@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Of Hanoi Viz</title>
+</head>
+<body>
+    <div class="bg-img"></div>
+    <div class="main-body">
+        <div class="upper-sec">
+            <div class="elem">
+                <select id="input">
+                    <option>Disk</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select id="motion">
+                    <option>Speed</option>
+                    <option value="700">Fast</option>
+                    <option value="1000"> Medium </option>
+                    <option value="2000">SloW</option>
+                </select>
+            <button onclick="start()">Start</button>
+            <button onclick="clr()">Clear</button>
+            </div>
+        </div>
+        <div class="lower-sec">
+            <div class="board">
+               <div class="A-s all" id="A"></div>
+               <div class="C-s all" id="C"></div>
+               <div class="B-s all" id="B"></div>
+            </div>
+            <div class="bar">
+                <div class="A-bot">SOURCE</div>
+                <div class="C-bot">DESTINATION</div>
+                <div class="B-bot">AUXILARY</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./algorithm.js"></script>
+<link rel="stylesheet" href="./style.css">
+</html>
